@@ -1,4 +1,5 @@
-import React from 'react';
+import About from './sections/About';
+import Hero from './sections/Hero';
 import NavBar from './sections/NavBar';
 
 const App = () => {
@@ -6,6 +7,10 @@ const App = () => {
   max-w-7xl'>
     <NavBar/>
     <Hero/>
+    <About/>
+    <section className="min-h-screen"/>
+    <section className="min-h-screen"/>
+    <section className="min-h-screen"/>
   </div>
 }
 
