@@ -241,7 +241,7 @@ export const mySocials = [
   },
 ];
 
-export const experiences = [
+export const education = [
   {
     title: "Software Developer",
     job: "Security & Defense Projects",

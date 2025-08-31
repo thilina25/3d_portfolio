@@ -1,4 +1,5 @@
 import About from './sections/About';
+import Education from './sections/Education';
 import Hero from './sections/Hero';
 import NavBar from './sections/NavBar';
 import Project from './sections/Project';
@@ -10,6 +11,7 @@ const App = () => {
     <Hero/>
     <About/>
     <Project/>
+    <Education />
     <section className="min-h-screen"/>
     <section className="min-h-screen"/>
     <section className="min-h-screen"/>
