@@ -1,4 +1,5 @@
 import About from './sections/About';
+import Contact from './sections/Contact';
 import Education from './sections/Education';
 import Hero from './sections/Hero';
 import NavBar from './sections/NavBar';
@@ -14,9 +15,7 @@ const App = () => {
     <Project />
     <Education />
     <Testimonail />
-    <section className="min-h-screen"/>
-    <section className="min-h-screen"/>
-    <section className="min-h-screen"/>
+    <Contact />
   </div>
 }
 
