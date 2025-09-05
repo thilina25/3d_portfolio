@@ -2,19 +2,21 @@ import { OrbitingCircles } from "./OrbitingCircles";
 
 export function FrameWorks() {
     const skills = [
-        "auth0",
-        "blazor",
-        "cplusplus",
         "python",
         "javascript",
         "java",
         "html5",
         "tailwindcss",
-        "vite.js",
-        "reactjs",
+        "vitejs",
+        "react",
         "sqlite",
         "django",
-        "css",
+        "mongodb",
+        "css3",
+        "visualstudiocode",
+        "github",
+        "git",
+        "microsoftsqlserver"
     ]
   return (
     <div className="relative flex h-[15rem] w-full flex-col 

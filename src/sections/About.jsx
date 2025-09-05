@@ -8,7 +8,9 @@ import { color } from 'motion'
 const About = () => {
    {/*const grid2Container = useRef()*/}
   return (
-    <section id="About" className="C-space section-spacing">
+    <section 
+    id="About" 
+    className="C-space section-spacing rounded-4xl p-9 animated-gradient">
         <h2 className='text-heading'>About Me</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-6 
         md:auto-rows-[18rem] mt-12">
@@ -27,7 +29,7 @@ const About = () => {
                 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"></div>
             </div>
             {/*Grid Two*/}
-            {/* <div className="bg-yellow-600 grid-2 rounded-xl">
+            {/*} <div className="bg-yellow-600 grid-2 rounded-xl">
                 <div ref={grid2Container} 
                     className="flex items-center justify-center w-full h-full">
                     <p className="flex items-end text-5xl text-white-900">
@@ -72,7 +74,7 @@ const About = () => {
                 </div>
             </div> */}
             {/*Grid Three*/}
-            <div className="grid-black-color grid-3">
+            <div className="grid-black-color grid-2">
                 <div className="z-10 w-[50%]">
                     <p className="headtext">Time Zone</p>
                     <p className="subtext">
@@ -84,10 +86,10 @@ const About = () => {
                 </figure>
             </div>
             {/*Grid Four*/}
-            <div className="grid-default-color grid-3">
+            <div className="bg-yellow-700 rounded-4xl p-4 grid-3">
                 <div className="z-10 w-[50%]">
-                    <p className="headtext">Teck Stack</p>
-                    <p className="subtext">
+                    <p className="headtext" style={{color: "black"}}>My Tools</p>
+                    <p className="subtext" style={{color: "black"}}>
                         I specialize in a variety of language, framworks, and tools that
                         allow me to build robust and scalable applications
                     </p>
@@ -109,7 +111,6 @@ const About = () => {
                 </div>
             </div>
         </div>
-
     </section>
   )
 }
