@@ -5,7 +5,6 @@ import ParallaxBackground from "../components/ParallaxBackground"
 import { Float, OrbitControls } from "@react-three/drei"
 import { Titan } from "../components/Titan"
 import { Soul } from "../components/Soul"
-
 import { EffectComposer, Bloom } from "@react-three/postprocessing"
 import { easing } from "maath"
 import { Suspense } from "react"
@@ -14,7 +13,7 @@ import Loader from "../components/Loader"
 
 const Hero = () => {
   return (
-    <section className="flex items-start justify-between
+    <section id="Hero" className="flex items-start justify-between
     md:items-start md:justify-start min-h-screen overflow-hidden 
     c-space">
         <HeroText/>
@@ -25,6 +24,7 @@ const Hero = () => {
             <Canvas>
                 <Astronaut/>
                 <OrbitControls/>
+                <Rig/>
             </Canvas>
         </figure>*/}
         {/* Titan 3D model inside Canvas */}
@@ -39,6 +39,7 @@ const Hero = () => {
           {/* Titan model 
             <Titan scale={0.5} position={[300, 100, 100]} />
           <OrbitControls />
+          <Rig/>
         </Canvas>
       </figure>*/}
       <figure
@@ -53,7 +54,6 @@ const Hero = () => {
             intensity={1.2}
             castShadow
           />
-
           {/* Soul of Cinder (neon version) */}
         <Suspense fallback={<Loader/>}>  
         <Float>
@@ -71,7 +71,6 @@ const Hero = () => {
               mipmapBlur
             />
           </EffectComposer>
-
           {/* Controls */}
           <OrbitControls />
           <Rig/>
@@ -87,7 +86,7 @@ function Rig() {
         easing.damp3(
             state.camera.position,
             [state.mouse.x / 10, 1 + state.mouse.y / 10, 3],
-            0.4,
+            0.1,
             delta
         )
     })

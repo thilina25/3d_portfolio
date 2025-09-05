@@ -42,8 +42,8 @@ export const Timeline = ({
               <div className="flex-col hidden gap-2 text-xl 
               font-bold md:flex md:pl-20 md:text-4xl text-neutral-300">
                 <h3>{item.date}</h3>
-                <h3 className="text-3xl text-neutral-400">{item.title}</h3>
-                <h3 className="text-3xl text-neutral-500">{item.title}>{item.job}</h3>
+                <h3 className="text-3xl text-neutral-400">{item.univeristy}</h3>
+                <h3 className="text-3xl text-neutral-500">{item.degree}</h3>
               </div>
             </div>
 
@@ -73,7 +73,8 @@ export const Timeline = ({
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-orange-500 to-transparent from-[0%] via-[10%] rounded-full" />
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-orange-500 to-transparent from-[0%] via-[10%] rounded-full"
+            />
         </div>
       </div>
     </div>

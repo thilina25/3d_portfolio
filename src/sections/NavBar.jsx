@@ -1,19 +1,27 @@
 import { useState } from "react"
 import { motion } from "motion/react"
+import { Link } from "react-scroll";
+
 function Navigation() {
     return (
         <ul className="nav-ul">
             <li className="nav-li">
-                <a href="#home" className="nav-link">Home</a>
+                <Link to="Hero" smooth={true} duration={600} offset={-80} className="nav-link cursor-pointer">Home</Link>
             </li>
             <li className="nav-li">
-                <a href="#about" className="nav-link">About</a>
+                <Link to="About" smooth={true} duration={600} offset={-80} className="nav-link cursor-pointer">About</Link>
             </li>
             <li className="nav-li">
-                <a href="#projects" className="nav-link">Projects</a>
+                <Link to="Project" smooth={true} duration={600} offset={-80} className="nav-link cursor-pointer">Projects</Link>
             </li>
             <li className="nav-li">
-                <a href="#contact" className="nav-link">Contact</a>
+                <Link to="Education" smooth={true} duration={600} offset={-80} className="nav-link cursor-pointer">Educations</Link>
+            </li>
+            <li className="nav-li">
+                <Link to="Testimonail" smooth={true} duration={600} offset={-80} className="nav-link cursor-pointer">Client Reviews</Link>
+            </li>
+            <li className="nav-li">
+                <Link to="Contact" smooth={true} duration={600} offset={-80} className="nav-link cursor-pointer">Contact</Link>
             </li>
         </ul>
     )

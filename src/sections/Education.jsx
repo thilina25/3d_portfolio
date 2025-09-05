@@ -3,7 +3,7 @@ import { education } from '../constants'
 
 const Education = () => {
   return (
-    <div className='w-full '>
+    <div id="Education" className='w-full '>
         <Timeline data={education} />
     </div>
   )

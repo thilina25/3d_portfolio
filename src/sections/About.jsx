@@ -8,7 +8,7 @@ import { color } from 'motion'
 const About = () => {
    {/*const grid2Container = useRef()*/}
   return (
-    <section className="C-space section-spacing">
+    <section id="About" className="C-space section-spacing">
         <h2 className='text-heading'>About Me</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-6 
         md:auto-rows-[18rem] mt-12">

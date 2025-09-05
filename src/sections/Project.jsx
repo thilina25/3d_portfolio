@@ -14,7 +14,7 @@ const Project = () => {
     }
     const [prview, setPreview] = useState(null)
   return (
-  <section
+  <section id="Project"
     onMouseMove = { handelMouseMove } 
     className="relative c-space section-spacing"
     >
