@@ -1,15 +1,28 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Clothing Platform",
+    title: "E-commerce Platform",
     description:
-      " ",
+    "TrendThreads is a dynamic, full-stack web application designed to deliver a seamless online shopping experience for clothing enthusiasts.",
+
     subDescription: [
-      
+    "Built with ReactJS, Node.js, Express, and MongoDB for full-stack functionality",
+    "Admin dashboard for product CRUD operations and inventory control",
+    "RESTful API integration for seamless frontend-backend communication",
+    "Scalable MongoDB schema for users, products, and orders",
     ],
+
     href: "",
     logo: "",
-    image: "/assets/projects/e-com_head_1.png",
+    images: [
+      "/assets/projects/e-com_head_1.png", 
+      "/assets/projects/women_sec_1.png",
+      "/assets/projects/men_sec_1.png",
+      "/assets/projects/kids_sec_1.png",
+    ],
+      
+    // eslint-disable-next-line no-dupe-keys
+    href:"https://github.com/thilina25/E-com_project",
     tags: [
       {
         id: 1,
@@ -37,13 +50,17 @@ export const myProjects = [
     id: 2,
     title: "Static-dynamic Hybrid Travel Website",
     description:
-      "",
+      "A responsive travel booking website built with PHP, JavaScript, and CSS, featuring destination listings and inquiry forms.",
     subDescription: [
-      
+      "Built with PHP, JavaScript, and CSS, running locally on XAMPP for full-stack development.",
+      "Features destination listings with images, pricing, and detailed descriptions.",
+      "Includes interactive booking forms with client-side validation and backend handling.",
+      "Responsive design ensures smooth user experience across desktop and mobile devices.",
+      "Modular PHP structure supports scalability, with session management and inquiry tracking."
     ],
-    href: "",
+    href: "https://github.com/thilina25/travel-project",
     logo: "",
-    image: "/assets/projects/head_section_1.png",
+    images: ["/assets/projects/head_section_1.png",],
     tags: [
       {
         id: 1,
@@ -67,51 +84,21 @@ export const myProjects = [
       },
     ],
   },
-  {
+    {
     id: 3,
-    title: "Android Application for Psychology Therapy",
+    title: "Portfolio",
     description:
-      "",
+      "A responsive portfolio site built with HTML, Bootstrap, ReactJS, and JSON to showcase projects and skills interactively.",
     subDescription: [
-      
+      "Designed a clean, mobile-friendly layout using Bootstrap for responsive styling.",
+      "Implemented dynamic project rendering with ReactJS and JSON-based data structures.",
+      "Includes sections for personal bio, skills, project gallery, and contact form.",
+      "Built reusable React components for modularity and scalability.",
+      "Optimized for performance and accessibility across modern browsers and devices."
     ],
-    href: "",
+    href: "https://github.com/thilina25/official-portfolio",
     logo: "",
-    image: "/assets/projects/app_head.png",
-    tags: [
-      {
-        id: 1,
-        name: "Java",
-        path: "/assets/logos/java.svg",
-      },
-      {
-        id: 2,
-        name: "Android Studio",
-        path: "/assets/logos/androidstudio.svg",
-      },
-      {
-        id: 3,
-        name: "Android SDK",
-        path: "/assets/logos/sdk.svg",
-      },
-      {
-        id: 4,
-        name: "Firebase",
-        path: "/assets/logos/firebase.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Portfolio for Software Developers",
-    description:
-      "",
-    subDescription: [
-      
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/portfolio-head.png",
+    images: ["/assets/projects/portfolio-head.png",],
     tags: [
       {
         id: 1,
@@ -136,6 +123,44 @@ export const myProjects = [
     ],
   },
   {
+    id: 4,
+    title: "Android Application 'MindCare'",
+    description:
+      "A mobile therapy app built with Android Studio, Firebase, and Java to support mental wellness through guided sessions and user tracking.",
+    subDescription: [
+      "Developed using Android Studio and Java, with Firebase for real-time data storage and user authentication.",
+      "Features include mood tracking, daily check-ins, and guided therapy exercises tailored to user needs.",
+      "Secure login system with Firebase Authentication and personalized user dashboards.",
+      "Push notifications for session reminders and motivational prompts to encourage engagement.",
+      "Clean UI/UX design focused on accessibility and emotional comfort, optimized for mobile devices."
+    ],
+    href: "https://github.com/thilina25/MindCareApp",
+    logo: "",
+    images: ["/assets/projects/app_head.png",],
+    tags: [
+      {
+        id: 1,
+        name: "Java",
+        path: "/assets/logos/java.svg",
+      },
+      {
+        id: 2,
+        name: "Android Studio",
+        path: "/assets/logos/androidstudio.svg",
+      },
+      {
+        id: 3,
+        name: "Android SDK",
+        path: "/assets/logos/sdk.svg",
+      },
+      {
+        id: 4,
+        name: "Firebase",
+        path: "/assets/logos/firebase.svg",
+      },
+    ],
+  },
+  /*{
     id: 5,
     title: "WordPress Custom Theme",
     description:
@@ -208,7 +233,7 @@ export const myProjects = [
         path: "/assets/logos/tailwindcss.svg",
       },
     ],
-  },
+  },*/
 ];
 
 export const mySocials = [
