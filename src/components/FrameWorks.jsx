@@ -16,7 +16,9 @@ export function FrameWorks() {
         "visualstudiocode",
         "github",
         "git",
-        "microsoftsqlserver"
+        "microsoftsqlserver",
+        "androidstudio",
+        "firebase"
     ]
   return (
     <div className="relative flex h-[15rem] w-full flex-col 
