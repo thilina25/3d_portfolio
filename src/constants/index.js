@@ -244,61 +244,55 @@ export const mySocials = [
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/thilina-kumarasiri-7970a02b7/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
-    name: "Instagram",
+    name: "GitHub",
     href: "https://www.instagram.com/ali.sanatidev/reels/",
-    icon: "/assets/socials/instagram.svg",
+    icon: "/assets/socials/github-svgrepo-com.svg",
   },
 ];
 
 export const education = [
   {
     univeristy: "The Open University of Sri Lanka",
-    degree: "Undergraduate Software Engineer",
+    degree: "Software Engineering (BSe)",
     date: "2023 - Present ",
     contents: [
-      "Detail-oriented Full Stack Developer with a solid foundation in programming languages and web development", 
-      "frameworks. Proficient in creating dynamic, user-friendly applications using modern technologies. Passionate about", 
-      "leveraging coding skills with innovative design to enhance user experiences. Eager to contribute to a collaborative", 
-      "environment where I can further develop my programming expertise and make a positive impact."
+      "Currently pursuing a BSc in Software Engineering at The Open University of Sri Lanka (2023–present), with a focus on full-stack development, mobile apps, and scalable web solutions.", 
     ],
   },
   {
     univeristy: "Department of Examination (Advanced Level), Sri Lanka",
-    degree: "",
+    degree: "Advanced Level",
     date: "2021",
     contents: [
-      "General Certificate of Education (Advanced Level), Sri Lanka",
-      "Information Technology – S",
-      "Media Studies – C",
-      "Logic - C", 
+      "Completed G.C.E. Advanced Level in 2021 under the Department of Examinations, Sri Lanka, specializing in Information Technology, Logic, and Communication & Media Studies.",
     ],
   },
   {
     univeristy: "Department of Examination (Ordinary Level), Sri Lanka",
-    degree: "",
+    degree: "Ordinary Level",
     date: "2014",
     contents: [
-      "General Certificate of Education (Ordinary Level), Sri Lanka"
+      "Completed G.C.E. Ordinary Level in 2014 under the Department of Examinations, Sri Lanka, with a strong academic foundation across core subjects."
     ],
   },
   {
     univeristy: "SITC Campus, Sri Lanka",
-    degree: "",
+    degree: "Psychology and Counseling",
     date: "2022",
     contents: [
-      "Diploma in Psychology and Counseling "
+      "Earned a Diploma in Psychology and Counseling from SITC Campus, Sri Lanka in 2022, focusing on mental health awareness, therapeutic techniques, and client communication."
     ],
   },
   {
     univeristy: "ESoft Metro Campus, Sri Lanka",
-    degree: "",
+    degree: "Diploma in AutoCAD 2D / 3D",
     date: "2019",
     contents: [
-      "Diploma in AutoCAD 2D / 3D"
+      "Completed a Diploma in AutoCAD 2D/3D at Esoft Metro Campus, Sri Lanka in 2019, gaining hands-on experience in technical drafting and 3D modeling for design visualization."
     ],
   },
 ];

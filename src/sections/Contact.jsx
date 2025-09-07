@@ -2,6 +2,7 @@ import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import Alert from "../components/Alert"
 import { Particles } from "../components/Particles"
+import { NeonGradientCard } from "../components/NeonGradientCard"
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -63,14 +64,15 @@ const Contact = () => {
         />
         {showAlert && <Alert type={alertType} text={alertMessage} />}
         <div className="flex flex-col items-center justify-center
-        max-w-md p-5 mx-auto border border-white/10 rounded-2xl 
+        max-w-md p-5 mx-auto border-white/10 rounded-2xl 
         bg-primary">
+            <NeonGradientCard >
             <div className="flex flex-col items-start w-full gap-5 mb-10"> 
                 <h2 className="text-heading">Let's Connect</h2>
                 <p className="font-normal text-neutral-400">Whether you're looking to build a new website, improve 
                     your exisiting platfrom, or bring a unique project to life, I'm here to help
                 </p>
-            </div>
+            <NeonGradientCard>
             <form className="w-full" onSubmit={handelSubmit} action="">
                 <div className="mb-5">
                     <label htmlFor="name" className="field-label">
@@ -130,6 +132,9 @@ const Contact = () => {
                     {!isLoading?"Send" : "Sending..."}
                 </button>
             </form>
+            </NeonGradientCard>
+            </div>
+            </NeonGradientCard>
         </div>
     </section>
   )

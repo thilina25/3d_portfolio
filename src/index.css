@@ -60,6 +60,13 @@
   color: white; /* ensures text is readable */
 }
 
+.animated-gradient-2 {
+  background: linear-gradient(90deg, #521C75, #7F25B0, #4A43B0, #233CA8);
+  background-size: 800% 800%;
+  animation: gradientBG 15s ease infinite;
+  color: white; /* ensures text is readable */
+}
+
 body {
   background: #030412;
   font-family: "Funnel Display", sans-serif;
@@ -148,4 +155,18 @@ body {
 
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+}
+
+@theme inline {
+  --animate-background-position-spin: background-position-spin 3000ms infinite
+    alternate;
+ 
+  @keyframes background-position-spin {
+    0% {
+      background-position: top center;
+    }
+    100% {
+      background-position: bottom center;
+    }
+  }
 }

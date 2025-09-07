@@ -28,10 +28,20 @@ export const Timeline = ({
     <div
       className="c-space section-spacaing"
       ref={containerRef}>
+        <div className="text-center">
         <h2 className="text-heading">My Education</h2>
+        <p className="mt-3 text-neutral-400 text-lg">
+          Completed formal education with a strong foundation in software development, modern web technologies and others for extra knowledge.
+        </p>
+        </div>
+
+        {/* Divider */}
+        <div className="bg-gradient-to-r from-transparent
+        via-neutral-700 to-transparent mt-12 h-[1px] w-full"/>
+
       <div ref={ref} className="relative pb-20">
         {data.map((item, index) => (
-          <div key={index} className="flex justify-start pt-10 md:pt-40 md:gap-10">
+          <div key={index} className="flex justify-start pt-6 md:pt-16 md:gap-6">
             <div
               className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div
@@ -43,10 +53,9 @@ export const Timeline = ({
               font-bold md:flex md:pl-20 md:text-4xl text-neutral-300">
                 <h3>{item.date}</h3>
                 <h3 className="text-3xl text-neutral-400">{item.univeristy}</h3>
-                <h3 className="text-3xl text-neutral-500">{item.degree}</h3>
+                <h3 className="text-xl text-neutral-500">{item.degree}</h3>
               </div>
             </div>
-
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
                 <div className="block mb-4 text-2xl font-bold
                 text-left text-neutral-300 md:hidden">
@@ -54,20 +63,19 @@ export const Timeline = ({
                     <h3>{item.job}</h3>
                 </div>
                 {item.contents.map((content, index) => (
-                    <p className="mb-3 font-normal text-neutral-400"
+                    <p className="mb-3 text-xl text-neutral-400"
                     key={index}>{content}</p>
                 ))}
             </div>
           </div>
         ))}
         <div
-          style={{
-            height: height + "px",
-          }}
           className="absolute md:left-1 left-1 top-0 
           overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] 
           from-transparent from-[0%] via-neutral-700 to-transparent to-[99%] 
-          [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] ">
+          [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+          style={{ height: "100%" }}
+          >
           <motion.div
             style={{
               height: heightTransform,

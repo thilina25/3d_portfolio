@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { Marquee } from "../components/Marquee";
 import { reviews } from "../constants";
+import { NeonGradientCard } from "../components/NeonGradientCard";
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
@@ -12,6 +13,7 @@ const ReviewCard = ({
   body,
 }) => {
   return (
+    <NeonGradientCard className="max-w-md mx-auto">
     <figure id="Testimonail"
       className={twMerge("relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-50/[.1] bg-gradient-to-r bg-indigo to-storm hover:bg-royal hover-animation"
       )}
@@ -33,6 +35,7 @@ const ReviewCard = ({
       </div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
     </figure>
+    </NeonGradientCard>
   );
 };
 
