@@ -1,12 +1,21 @@
-import React, { useRef } from 'react'
-import Card from '../components/Card'
 import { Globe } from '../components/globe'
 import CopyEmailButton from '../components/CopyEmailButton'
 import { FrameWorks } from '../components/FrameWorks'
-import { color } from 'motion'
+import { useState, useEffect } from 'react'
 
 const About = () => {
    //const grid2Container = useRef() // For tested grid
+
+   const [about, setAbout] = useState(null)
+
+    // Fetch About data from backend
+    useEffect(() => {
+        fetch("http://127.0.0.1:8000/core/about/")
+        .then((res) => res.json())
+        .then((data) => setAbout(data[0])) // only first object
+        .catch((err) => console.log("Error fetching About:", err))
+    }, [])
+
   return (
     <section 
     id="About" 
@@ -30,56 +39,20 @@ const About = () => {
 
             {/*Grid two */}
             <div className="bg-purple-900 grid-2 p-4 rounded-xl">
-                {/*<div ref={grid2Container} 
-                    className="flex items-center justify-center w-full h-full">
-                    <p className="flex items-end text-5xl text-white-900">
-                        CODE IS CRAFT
-                    </p>
-                    <Card style={{rotate: "75deg", top: "30%", left:"20%", backgroundColor: "purple", border: "2px solid yellow"}}
-                    text="PYTHON" 
-                    containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "-30deg", top: "60%", left:"45%",  backgroundColor: "purple", border: "2px solid yellow"}} 
-                    text="Django" 
-                    containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "90deg", bottom: "30%", left:"70%",  backgroundColor: "purple", border: "2px solid yellow"}} 
-                    text="JavaScript" 
-                    containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "-45deg", top: "55%", left:"0%",  backgroundColor: "purple", border: "2px solid yellow"}}
-                     text="ReactJS" 
-                     containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "20deg", top: "10%", left:"38%",  backgroundColor: "purple", border: "2px solid yellow"}}
-                     text="SQL" 
-                     containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "30deg", top: "70%", left:"70%"}}
-                     image="assets/logos/python.png"
-                     containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "-45deg", top: "70%", left:"25%"}}
-                     image="assets/logos/js.png"
-                     containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "-45deg", top: "5%", left:"10%"}}
-                     image="assets/logos/django.png"
-                     containerRef={grid2Container} 
-                    />
-                    <Card style={{rotate: "45deg", top: "5%", left:"70%"}}
-                     image="assets/logos/sql.png"
-                     containerRef={grid2Container} 
-                    />
-                </div>*/}
                 <div className="flex flex-col justify-center h-full text-center text-white">
-                    <img 
-                    src="/public/assets/profile.jpeg" 
-                    alt="profile"
-                    className="object-cover w-30 h-30 mx-auto rounded-full border-4 border-white mb-4"
-                    />
-                    <h3 className="text-2xl font-bold">Developer Snapshot</h3>
-                    <p className="mt-2 text-xl text-gray-100" >
+                   {about && about.profile_image ? (
+                        <img 
+                            src={about.profile_image}
+                            alt="Profile"
+                            className="object-cover w-40 h-40 mx-auto rounded-full border-4 border-white mb-4"
+                        />
+                    ) : (
+                        <div className="w-30 h-30 bg-gray-500 rounded-full border-4 border-white mb-4 flex items-center justify-center">
+                            No Image
+                        </div>
+                    )}
+                    <h3 className="text-xl font-bold">Developer Snapshot</h3>
+                    <p className="mt-2 text-sm text-gray-100" >
                     Passionate about React, Django, and crafting smooth user experiences.  
                     Always exploring new technologies 🚀
                     </p>

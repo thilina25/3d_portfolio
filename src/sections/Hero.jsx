@@ -18,30 +18,6 @@ const Hero = () => {
     c-space">
         <HeroText/>
         <ParallaxBackground/>
-        {/*<figure className="absolute inset-0"
-        style={{width: "100vw", height: "100vh"}}
-        >
-            <Canvas>
-                <Astronaut/>
-                <OrbitControls/>
-                <Rig/>
-            </Canvas>
-        </figure>*/}
-        {/* Titan 3D model inside Canvas */}
-      {/*<figure
-        className="absolute inset-0"
-        style={{ width: "100vw", height: "100vh" }}
-      >
-        <Canvas camera={{ position: [0, 5, 15], fov: 45 }}>
-          {/* Lighting
-          <ambientLight intensity={0.6} />
-          <directionalLight position={[-700, 200, 550]} intensity={2} castShadow />
-          {/* Titan model 
-            <Titan scale={0.5} position={[300, 100, 100]} />
-          <OrbitControls />
-          <Rig/>
-        </Canvas>
-      </figure>*/}
       <figure
         className="absolute inset-0"
         style={{ width: "100vw", height: "100vh" }}
